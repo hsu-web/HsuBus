@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.10416666666666667" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/activity_forth.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/activity_second.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/activity_third.xml" value="0.18" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/activity_third2.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/animal_item.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_select1.xml" value="0.25" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_select10.xml" value="0.1" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_select2.xml" value="0.1" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_select3.xml" value="0.33" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_select4.xml" value="0.25" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_select5.xml" value="0.25" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_select6.xml" value="0.22" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_select7.xml" value="0.1" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_select8.xml" value="0.25" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_select9.xml" value="0.1" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_titl.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_title.xml" value="0.1" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_tran.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragment_trans.xml" value="0.22" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/fragmenttrans.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/list_item.xml" value="0.25" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/layout/string.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
+        <entry key="..\:/Users/a1a2g/AndroidStudioProjects/HsuBus/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.13125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

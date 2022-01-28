@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "965629601725",
+    "project_id": "hsubusss",
+    "storage_bucket": "hsubusss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965629601725:android:5b26ebafce9ccf2d7c94d4",
+        "android_client_info": {
+          "package_name": "example.com.hsubus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965629601725-melrbjsg9ppfgjchj3jp37uh91r8i3a1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2OTYioGOqWYxe5xNKqhfzgNCcfV8I7Aw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965629601725-melrbjsg9ppfgjchj3jp37uh91r8i3a1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "965629601725-76373iul6rg0bgh9fcb2i25g1qr5buio.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "HiromasaKusanoHappuri.HsuBusTimeTable"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
