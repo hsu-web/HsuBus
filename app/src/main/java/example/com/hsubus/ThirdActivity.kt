@@ -10,7 +10,6 @@ import android.widget.ListView
 import com.google.firebase.firestore.FirebaseFirestore
 import example.com.hsubus.databinding.ActivityThirdBinding
 
-
 class ThirdActivity : AppCompatActivity() {
     private lateinit var binding: ActivityThirdBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,52 +18,69 @@ class ThirdActivity : AppCompatActivity() {
         binding = ActivityThirdBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //2)Viewの取得＆表示させるデータ（配列）を用意
+        //activity_third.xmlのlvをListViewとして用いるために用意
         val lv:ListView =findViewById(R.id.lv)
-        val titledata = arrayListOf<String>()
+        //arrayListOfは要素数の追加、削除ができる。
+        val titled = arrayListOf<String>()
+        //dbにFirebaseのFirestoreDatabaseからの情報を代入している。
         val db = FirebaseFirestore.getInstance()
+        //クリックしたリストの行番号を取得するために用いている。
         var i = 0
 
-        //3)アダプタ
-        val adapter=ArrayAdapter(
+        //ArrayAdapterはListViewに使うAdapterのひとつでadapterに代入している。
+        val adapter = ArrayAdapter(
             this,
+            //simple_list_item_1は用意されている定義済みのレイアウトファイルのID
             android.R.layout.simple_list_item_1,
-            titledata
+            titled
         )
-        //4)adapterをlistviewにセット
+
+        //adapterをlvにセットしている。
         lv.adapter = adapter
 
         db.collection("posts")
             .get()
+            //dbからデータを受け取れた場合の処理。resultにはdbのpostsの中身が入る。
             .addOnSuccessListener { result ->
+                //resultをdocumentに代入し、それをresult分繰り返している。
                 for (document in result) {
-                    Log.d(TAG, "${document.id} => ${document.data}") //全表示
-                    Log.d(TAG, "こんにちは")
+                    //テスト：Logにより、dbのpostsを表示させている。
+                    //Log.d(TAG, "${document.id} => ${document.data}")
+                    //テスト：Logにより、こんにちはを表示させている。
+                    //Log.d(TAG, "こんにちは")
 
+                    //dbのpostsの中身のひとつのフィールドであるcontentsTitleをtitleに代入している。
                     val title = document.data["contentsTitle"]
+                    //adapterにtitleを追加している。
                     adapter.add(title.toString())
+                    //テスト：Logにより、titleを表示させている。
                     //Log.d(TAG, title.toString())
-                    //Log.d(TAG, data[i]) //id表示
+                    //iに1を加えている。
                     i += 1
                 }
             }
+            //何らかの理由でdbからデータを受け取れなかった場合の処理
             .addOnFailureListener { exception ->
+                //エラーをログに出力
                 Log.d(TAG, "Error getting documents: ", exception)
             }
 
-        //5)クリック処理
-        lv.setOnItemClickListener { _, _, i, _->
+        //activity_third.xmlのlvを押した際のクリック処理
+        lv.setOnItemClickListener { _, _, _, _->
+            //intentに画面推移先(今回であればForthActivity)を代入している
             val intent = Intent(this, ForthActivity::class.java)
+            //putExtraによりintentにTEXT_NUMという名前でiを送っている
             intent.putExtra("TEXT_NUM", i)
-            //画面推移
+            //intentに画面推移する処理
             startActivity(intent)
         }
 
         //activity_third.xmlのbutton7を押した際のクリック処理
         binding.button7.setOnClickListener {
-            //動作確認済みコード→Toast.makeText(applicationContext, "name", Toast.LENGTH_LONG).show()
+            //テスト：トーストをアプリ下部に「name」という名前で表示させる。
+            //Toast.makeText(applicationContext, "name", Toast.LENGTH_LONG).show()
 
-            //intentに画面推移先(今回であればMainActivity)を定義する
+            //intentに画面推移先(今回であればMainActivity)を代入している
             val intent = Intent(this, MainActivity::class.java)
             //intentに画面推移する処理
             startActivity(intent)
@@ -72,7 +88,7 @@ class ThirdActivity : AppCompatActivity() {
 
         //activity_third.xmlのbutton8を押した際のクリック処理
         binding.button8.setOnClickListener {
-            //intentに画面推移先(今回であればSecondActivity)を定義する
+            //intentに画面推移先(今回であればSecondActivity)を代入している
             val intent = Intent(this, SecondActivity::class.java)
             //intentに画面推移する処理
             startActivity(intent)
