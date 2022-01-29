@@ -60,13 +60,21 @@ class ThirdActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //activity_third.xmlのbutton7を押した際のクリック処理
         binding.button7.setOnClickListener {
-            //Toast.makeText(applicationContext, "name", Toast.LENGTH_LONG).show()
+            //動作確認済みコード→Toast.makeText(applicationContext, "name", Toast.LENGTH_LONG).show()
+
+            //intentに画面推移先(今回であればMainActivity)を定義する
             val intent = Intent(this, MainActivity::class.java)
+            //intentに画面推移する処理
             startActivity(intent)
         }
+
+        //activity_third.xmlのbutton8を押した際のクリック処理
         binding.button8.setOnClickListener {
+            //intentに画面推移先(今回であればSecondActivity)を定義する
             val intent = Intent(this, SecondActivity::class.java)
+            //intentに画面推移する処理
             startActivity(intent)
         }
     }

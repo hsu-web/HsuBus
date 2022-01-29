@@ -13,12 +13,18 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //activity_main.xmlのbutton2を押した際のクリック処理
         binding.button2.setOnClickListener {
+            //intentに画面推移先(今回であればSecondActivity)を定義する
             val intent = Intent(this, SecondActivity::class.java)
+            //intentに画面推移する処理
             startActivity(intent)
         }
+        //activity_main.xmlのbutton3を押した際のクリック処理
         binding.button3.setOnClickListener {
+            //intentに画面推移先(今回であればThirdActivity)を定義する
             val intent = Intent(this, ThirdActivity::class.java)
+            //intentに画面推移する処理
             startActivity(intent)
         }
     }
