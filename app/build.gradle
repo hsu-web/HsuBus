@@ -17,7 +17,9 @@ android {
         applicationId "example.com.hsubus"
         minSdk 23
         targetSdk 30
+        //アプリをアップデートするときには必ず変更すること。
         versionCode 6
+        //アプリをアップデートするときには必ず変更すること。
         versionName "1.6"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -46,7 +48,7 @@ dependencies {
     // Import the Firebase BoM
     implementation platform('com.google.firebase:firebase-bom:29.0.3')
     implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
@@ -76,7 +78,6 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
     kapt 'com.github.bumptech.glide:compiler:4.9.0'
     implementation "org.jetbrains.kotlin:kotlin-script-runtime:1.5.10"
-
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation "androidx.cardview:cardview:1.0.0"
     implementation 'androidx.fragment:fragment-ktx:1.4.0'
