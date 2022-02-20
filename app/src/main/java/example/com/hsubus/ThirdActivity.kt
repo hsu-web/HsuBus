@@ -65,8 +65,9 @@ class ThirdActivity : AppCompatActivity() {
                 Log.d(TAG, "Error getting documents: ", exception)
             }
 
+
         //activity_third.xmlのlvを押した際のクリック処理
-        lv.setOnItemClickListener { _, _, _, _->
+        lv.setOnItemClickListener { _, _, i, _->
             //intentに画面推移先(今回であればForthActivity)を代入している
             val intent = Intent(this, ForthActivity::class.java)
             //putExtraによりintentにTEXT_NUMという名前でiを送っている
