@@ -18,9 +18,9 @@ android {
         minSdk 23
         targetSdk 30
         //アプリをアップデートするときには必ず変更すること。
-        versionCode 6
+        versionCode 8
         //アプリをアップデートするときには必ず変更すること。
-        versionName "1.6"
+        versionName "1.8"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
